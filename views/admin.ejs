@@ -1,0 +1,50 @@
+<%-include('partials/header')  %>
+<%-include('partials/navbar')  %>
+
+<main class="container">
+    <div class="w-100 p-3">
+        <div class="row mt-4 container">
+            <div class="col">
+                <h1 class="text-center justify-content-around">Crear Publicación</h1>
+            </div>
+        </div>
+        <div class="container ">
+    
+            <form action="" id="nueva-publicacion" class="container">
+    
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="titulo" placeholder="Titulo">
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="detalle"
+                        style="height: 200px"></textarea>
+                    <label for="detalle">Descripción</label>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="url_imagen" placeholder="url imagen">
+                </div>
+                <div class="mb-3">
+                    <input type="date" class="form-control" name="" id="fecha">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="url_sitio" placeholder="url para mas información">
+                </div>
+    
+                <button type="submit" class="btn btn-primary btn-sm">
+                    Guardar
+                </button>
+    
+            </form>
+    
+    
+        </div>
+    </div>
+    
+
+
+</main>
+
+
+<script src="/js/admin.js"></script>
+
+<%-include('partials/footer')  %>
